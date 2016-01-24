@@ -46,294 +46,32 @@
   </nav>
   
 <article class="markdown-body">
-  <h2 id="notes"><a class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>notes</h2>
-<ol>
-<li>Every <code>index.md</code> file in input directory is a web page.</li>
-<li>Every <code>index.md</code> has an accompany <code>index.yml</code> as configuration file.</li>
-<li><code>index.yml</code> inheirts and overrides <code>index.yml</code> in ancestor directories.</li>
-<li>Views' template engine is <a href="https://github.com/mozilla/nunjucks">nunjucks</a>.</li>
-</ol>
-<h2 id="directories"><a class="anchor" href="#directories"><span class="octicon octicon-link"></span></a>directories</h2>
-<ol>
-<li>models</li>
-<li>views</li>
-<li>dist</li>
-</ol>
-<h2 id="conventions"><a class="anchor" href="#conventions"><span class="octicon octicon-link"></span></a>conventions</h2>
-<ol>
-<li>pathname starts with and ends with <code>/</code>
-<ol>
-<li>example: '/', '/download/', '/blog/'</li>
-<li>wrong: 'download' '/download', 'blog/'</li>
-</ol>
-</li>
-<li>each page is a directory, not file
-<ol>
-<li>example: '/download/', '/blog/'</li>
-<li>wrong: '/download.html'， '/blog.htm'</li>
-</ol>
-</li>
-</ol>
-<hr />
-<h1 id="table-of-contents"><a class="anchor" href="#table-of-contents"><span class="octicon octicon-link"></span></a>Table of Contents</h1>
-<p>
-<ul class="toc">
-  <li>
-    <a href="#notes">notes</a>
-  </li>
-  <li>
-    <a href="#directories">directories</a>
-  </li>
-  <li>
-    <a href="#conventions">conventions</a>
-  </li>
-  <li>
-    <a href="#mastering-markdown">Mastering Markdown</a>
-  </li>
-  <li>
-    <a href="#strikethrough">~~strikethrough~~</a>
-  </li>
-  <li>
-    <a href="#insert">++insert++</a>
-  </li>
-  <li>
-    <a href="#mark">==mark==</a>
-  </li>
-  <li>
-    <a href="#subscript-h2o">Subscript: H~2~O</a>
-  </li>
-  <li>
-    <a href="#superscript-29th">Superscript: 29^th^</a>
-  </li>
-  <li>
-    <a href="#emoji">Emoji: :panda_face: :sparkles: :camel: :boom: :pig:</a>
-  </li>
-  <li>
-    <a href="#fontawesome">Fontawesome: :fa-cab: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:</a>
-  </li>
-  <li>
-    <a href="#ionicons">Ionicons: :ion-printer: :ion-social-tux: :ion-lock-combination: :ion-ios-medkit: :ion-coffee:</a>
-  </li>
-  <li>
-    <a href="#print-hello-code">`print 'hello code'`</a>
-  </li>
-  <li>
-    <a href="#tables-and-alignment">Tables and alignment</a>
-  </li>
-  <li>
-    <a href="#task-list">Task list</a>
-  </li>
-  <li>
-    <a href="#abbreviation">Abbreviation</a>
-  </li>
-  <li>
-    <a href="#footnote">Footnote</a>
-  </li>
-  <li>
-    <a href="#mathematical-formula-y-x2">Mathematical formula `$y = x^2$`</a>
-  </li>
-  <li>
-    <a href="#flowchart">Flowchart</a>
-  </li>
-  <li>
-    <a href="#sequence-diagram">Sequence diagram</a>
-  </li>
-  <li>
-    <a href="#gantt-diagram">Gantt diagram</a>
-  </li>
-  <li>
-    <a href="#custom-container">Custom Container</a>
-  </li>
-  <li>
-    <a href="#definition-list">Definition list</a>
-  </li>
-  <li>
-    <a href="#html">HTML</a>
-  </li>
-</ul>
-</p>
-<p>Note: Only <code>h2</code> and <code>h3</code> are shown in toc.</p>
-<h2 id="mastering-markdown"><a class="anchor" href="#mastering-markdown"><span class="octicon octicon-link"></span></a>Mastering Markdown</h2>
-<p>Markdown allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid <abbr title="Hyper Text Markup Language">HTML</abbr> for viewing.</p>
-<p><a href="https://guides.github.com/features/mastering-markdown/">Mastering Markdown Guide</a>.</p>
-<h2 id="strikethrough"><a class="anchor" href="#strikethrough"><span class="octicon octicon-link"></span></a><s>strikethrough</s></h2>
-<h2 id="insert"><a class="anchor" href="#insert"><span class="octicon octicon-link"></span></a><ins>insert</ins></h2>
-<h2 id="mark"><a class="anchor" href="#mark"><span class="octicon octicon-link"></span></a><mark>mark</mark></h2>
-<h2 id="subscript-h2o"><a class="anchor" href="#subscript-h2o"><span class="octicon octicon-link"></span></a>Subscript: H<sub>2</sub>O</h2>
-<p>You can also use inline math: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>H</mi><mn>2</mn></msub><mi>O</mi></mrow><annotation encoding="application/x-tex">H_2O</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.08125em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit" style="margin-right:0.02778em;">O</span></span></span></span></p>
-<h2 id="superscript-29th"><a class="anchor" href="#superscript-29th"><span class="octicon octicon-link"></span></a>Superscript: 29<sup>th</sup></h2>
-<p>You can also use inline math: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><msup><mn>9</mn><mrow><mi>t</mi><mi>h</mi></mrow></msup></mrow><annotation encoding="application/x-tex">29^{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.849108em;"></span><span class="strut bottom" style="height:0.849108em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">2</span><span class="mord"><span class="mord mathrm">9</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">t</span><span class="mord mathit">h</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></p>
-<h2 id="emoji"><a class="anchor" href="#emoji"><span class="octicon octicon-link"></span></a>Emoji: <img class="emojione" alt="🐼" src="https://cdn.jsdelivr.net/emojione/assets/png/1f43c.png"/> <img class="emojione" alt="✨" src="https://cdn.jsdelivr.net/emojione/assets/png/2728.png"/> <img class="emojione" alt="🐫" src="https://cdn.jsdelivr.net/emojione/assets/png/1f42b.png"/> <img class="emojione" alt="💥" src="https://cdn.jsdelivr.net/emojione/assets/png/1f4a5.png"/> <img class="emojione" alt="🐷" src="https://cdn.jsdelivr.net/emojione/assets/png/1f437.png"/></h2>
-<p><a href="http://www.emoji-cheat-sheet.com/">Emoji Cheat Sheet</a></p>
-<h2 id="fontawesome"><a class="anchor" href="#fontawesome"><span class="octicon octicon-link"></span></a>Fontawesome: <i class="fa fa-cab"></i> <i class="fa fa-flag"></i> <i class="fa fa-bicycle"></i> <i class="fa fa-leaf"></i> <i class="fa fa-heart"></i></h2>
-<p><a href="http://fontawesome.io/icons/">All the Font Awesome icons</a></p>
-<h2 id="ionicons"><a class="anchor" href="#ionicons"><span class="octicon octicon-link"></span></a>Ionicons: <i class="ion-printer"></i> <i class="ion-social-tux"></i> <i class="ion-lock-combination"></i> <i class="ion-ios-medkit"></i> <i class="ion-coffee"></i></h2>
-<p><a href="http://ionicons.com/">All the Ionicons icons</a></p>
-<h2 id="print-hello-code"><a class="anchor" href="#print-hello-code"><span class="octicon octicon-link"></span></a><code>print 'hello code'</code></h2>
-<pre><code class="hljs">evens = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>].collect <span class="hljs-built_in">do</span> |<span class="hljs-keyword">item</span>|
-  <span class="hljs-keyword">item</span> * <span class="hljs-number">2</span>
-<span class="hljs-keyword">end</span></code></pre><pre><code class="hljs">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-  $(<span class="hljs-string">'pre code'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">i, block</span>) </span>{
-    hljs.highlightBlock(block);
-  });
-});</code></pre><p><a href="https://help.github.com/articles/markdown-basics/#code-formatting">Code Formatting</a></p>
-<h2 id="tables-and-alignment"><a class="anchor" href="#tables-and-alignment"><span class="octicon octicon-link"></span></a>Tables and alignment</h2>
-<table>
-<thead>
-<tr>
-<th>First Header</th>
-<th>Second Header</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Content from cell 1</td>
-<td>Content from cell 2</td>
-</tr>
-<tr>
-<td>Content in the first column</td>
-<td>Content in the second column</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Left-Aligned</th>
-<th style="text-align:center">Center Aligned</th>
-<th style="text-align:right">Right Aligned</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">col 3 is</td>
-<td style="text-align:center">some wordy text</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td style="text-align:left">col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://help.github.com/articles/github-flavored-markdown/#tables">Table Syntax</a></p>
-<h2 id="task-list"><a class="anchor" href="#task-list"><span class="octicon octicon-link"></span></a>Task list</h2>
+  <h1 id="maml"><a class="anchor" href="#maml"><span class="octicon octicon-link"></span></a>maml</h1>
+<p><code>maml</code> is a static website generator taking <code>markdown</code> and <code>yaml</code> as input.</p>
+<p><code>maml</code> is short for &quot;markdown yaml&quot; and pronounced as <code>['mɑːmel]</code>.</p>
+<p><code>maml</code> = <code>markdown</code> + <code>yaml</code></p>
+<p>Chinese name is <code>马猫儿</code>.</p>
+<h2 id="features"><a class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+<h5 id="affected-by-ruby-on-rails"><a class="anchor" href="#affected-by-ruby-on-rails"><span class="octicon octicon-link"></span></a>affected by Ruby on Rails</h5>
 <ul>
-<li class="task-list-item"><input type="checkbox" disabled /> a bigger project
+<li>The folder structure is very similar to Ruby on Rails: <code>assets</code>, <code>controllers</code>, <code>models</code>, <code>views</code>.</li>
+<li>Convention over configuration.</li>
+</ul>
+<h5 id="simple-and-easy-to-use"><a class="anchor" href="#simple-and-easy-to-use"><span class="octicon octicon-link"></span></a>Simple and easy to use</h5>
 <ul>
-<li class="task-list-item"><input type="checkbox" disabled checked /> first subtask</li>
-<li class="task-list-item"><input type="checkbox" disabled checked /> follow up subtask</li>
-<li class="task-list-item"><input type="checkbox" disabled /> final subtask</li>
+<li>Every page is a folder on disk, and every folder contains two files: <code>index.md</code> and <code>index.yml</code>.</li>
+<li>Configurations files could inherit, thus you don't need to specify everything for each page.</li>
+<li>It works out of the box.</li>
 </ul>
-</li>
-<li class="task-list-item"><input type="checkbox" disabled /> a separate task</li>
+<h5 id="flexible"><a class="anchor" href="#flexible"><span class="octicon octicon-link"></span></a>Flexible</h5>
+<ul>
+<li>If you are a developer and you can change the things in controller and views, then you can gain infinite flexibility.</li>
+<li>It could be as flexible as Ruby on Rails(without those dynamic features since it is a static website generator).</li>
 </ul>
-<p><a href="https://help.github.com/articles/writing-on-github/#task-lists">Task List Syntax</a></p>
-<h2 id="abbreviation"><a class="anchor" href="#abbreviation"><span class="octicon octicon-link"></span></a>Abbreviation</h2>
-<p>Markup is based on <a href="https://michelf.ca/projects/php-markdown/extra/#abbr">php markdown extra</a> definition, but without multiline support:</p>
-<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification
-is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
-<h2 id="footnote"><a class="anchor" href="#footnote"><span class="octicon octicon-link"></span></a>Footnote</h2>
-<p>Here is a footnote reference,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> and another.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></p>
-<p>Here is an inline note.<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
-<p><a href="http://pandoc.org/README.html#footnotes">Footnote Syntax</a></p>
-<h2 id="mathematical-formula-y-x2"><a class="anchor" href="#mathematical-formula-y-x2"><span class="octicon octicon-link"></span></a>Mathematical formula <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y = x^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mrel">=</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></h2>
-<p>Inline math: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>[</mo><mn>1</mn><mo>−</mo><mo>(</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><msup><mo>)</mo><mi>n</mi></msup><mo>]</mo></mrow><mrow><mn>1</mn><mo>−</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></mfrac><mo>=</mo><msub><mi>s</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\dfrac{ \tfrac{1}{2}[1-(\tfrac{1}{2})^n] }{ 1-\tfrac{1}{2} } = s_n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.580108em;"></span><span class="strut bottom" style="height:2.660216em;vertical-align:-1.080108em;"></span><span class="base textstyle uncramped"><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.7351080000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">2</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.735em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">2</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mopen">[</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mopen">(</span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">2</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">]</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mrel">=</span><span class="mord"><span class="mord mathit">s</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>.</p>
-<p>Math block:</p>
-<div><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo>∮</mo><mi>C</mi></msub><msup><mi>x</mi><mn>3</mn></msup><mspace width="0.16667em"></mspace><mi>d</mi><mi>x</mi><mo>+</mo><mn>4</mn><msup><mi>y</mi><mn>2</mn></msup><mspace width="0.16667em"></mspace><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">\oint_C x^3\, dx + 4y^2\, dy</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.36em;"></span><span class="strut bottom" style="height:2.27225em;vertical-align:-0.91225em;"></span><span class="base displaystyle textstyle uncramped"><span class="mop"><span class="op-symbol large-op mop" style="margin-right:0.44445em;top:-0.0011249999999999316em;">∮</span><span class="vlist"><span style="top:0.91225em;margin-right:0.05em;margin-left:-0.44445em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit" style="margin-right:0.07153em;">C</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mspace thinspace"></span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathrm">4</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mspace thinspace"></span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.03588em;">y</span></span></span></span></span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn><mo>=</mo><mrow><mo fence="true">(</mo><mfrac><mrow><mrow><mo fence="true">(</mo><mn>3</mn><mo>−</mo><mi>x</mi><mo fence="true">)</mo></mrow><mo>×</mo><mn>2</mn></mrow><mrow><mn>3</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">2 = \left(
- \frac{\left(3-x\right) \times 2}{3-x}
- \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.45em;"></span><span class="strut bottom" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathrm">2</span><span class="mrel">=</span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">3</span><span class="mbin">−</span><span class="mord mathit">x</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="minner textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">(</span><span class="mord mathrm">3</span><span class="mbin">−</span><span class="mord mathit">x</span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">)</span></span><span class="mbin">×</span><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span></span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><msup><mi>m</mi><mn>2</mn></msup><mspace width="0.16667em"></mspace><mi>n</mi></mrow><mrow><msup><mn>3</mn><mi>m</mi></msup><mrow><mo fence="true">(</mo><mi>m</mi><mspace width="0.16667em"></mspace><msup><mn>3</mn><mi>n</mi></msup><mo>+</mo><mi>n</mi><mspace width="0.16667em"></mspace><msup><mn>3</mn><mi>m</mi></msup><mo fence="true">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sum_{m=1}^\infty\sum_{n=1}^\infty\frac{m^2\,n}
- {3^m\left(m\,3^n+n\,3^m\right)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.9185100000000004em;vertical-align:-1.267113em;"></span><span class="base displaystyle textstyle uncramped"><span class="mop op-limits"><span class="vlist"><span style="top:1.1671129999999998em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">m</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">∞</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mop op-limits"><span class="vlist"><span style="top:1.1671129999999998em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit">n</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><span style="top:-0.000005000000000143778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">∑</span></span></span><span style="top:-1.2500050000000003em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">∞</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord"><span class="mord mathrm">3</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">m</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="minner textstyle cramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">(</span><span class="mord mathit">m</span><span class="mord mspace thinspace"></span><span class="mord"><span class="mord mathrm">3</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="mord mathit">n</span><span class="mord mspace thinspace"></span><span class="mord"><span class="mord mathrm">3</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">m</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;">)</span></span></span></span></span><span style="top:-0.2300000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit">m</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mspace thinspace"></span><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>ϕ</mi><mi>n</mi></msub><mo>(</mo><mi>κ</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><msup><mi>κ</mi><mn>2</mn></msup></mrow></mfrac><msubsup><mo>∫</mo><mn>0</mn><mi mathvariant="normal">∞</mi></msubsup><mfrac><mrow><mi>sin</mi><mo>(</mo><mi>κ</mi><mi>R</mi><mo>)</mo></mrow><mrow><mi>κ</mi><mi>R</mi></mrow></mfrac><mfrac><mrow><mi mathvariant="normal">∂</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>R</mi></mrow></mfrac><mrow><mo fence="true">[</mo><msup><mi>R</mi><mn>2</mn></msup><mfrac><mrow><mi mathvariant="normal">∂</mi><msub><mi>D</mi><mi>n</mi></msub><mo>(</mo><mi>R</mi><mo>)</mo></mrow><mrow><mi mathvariant="normal">∂</mi><mi>R</mi></mrow></mfrac><mo fence="true">]</mo></mrow><mspace width="0.16667em"></mspace><mi>d</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\phi_n(\kappa) =
- \frac{1}{4\pi^2\kappa^2} \int_0^\infty
- \frac{\sin(\kappa R)}{\kappa R}
- \frac{\partial}{\partial R}
- \left[R^2\frac{\partial D_n(R)}{\partial R}\right]\,dR</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.45em;"></span><span class="strut bottom" style="height:2.40003em;vertical-align:-0.95003em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord"><span class="mord mathit">ϕ</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit">κ</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">4</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">π</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">κ</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mop"><span class="op-symbol large-op mop" style="margin-right:0.44445em;top:-0.0011249999999999316em;">∫</span><span class="vlist"><span style="top:0.91225em;margin-left:-0.44445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">0</span></span></span><span style="top:-0.9739999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">∞</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">κ</span><span class="mord mathit" style="margin-right:0.00773em;">R</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathit">κ</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span><span class="mord mathit" style="margin-right:0.00773em;">R</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="minner displaystyle textstyle uncramped"><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span><span class="mord mathit" style="margin-right:0.00773em;">R</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm" style="margin-right:0.05556em;">∂</span><span class="mord"><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.02778em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="style-wrap reset-textstyle textstyle uncramped" style="top:0em;"><span class="delimsizing size3">]</span></span></span><span class="mord mspace thinspace"></span><span class="mord mathit">d</span><span class="mord mathit" style="margin-right:0.00773em;">R</span></span></span></span></span></div><p><a href="http://meta.wikimedia.org/wiki/Help:Displaying_a_formula">Mathematical Formula Syntax</a></p>
-<h2 id="flowchart"><a class="anchor" href="#flowchart"><span class="octicon octicon-link"></span></a>Flowchart</h2>
-<div class="mermaid">graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[Car]</div><p><a href="http://knsv.github.io/mermaid/#flowcharts-basic-syntax">Flowchart Syntax</a></p>
-<div class="warning">
-<p>Adding many flowcharts will slow down the editor.</p>
-</div>
-<h2 id="sequence-diagram"><a class="anchor" href="#sequence-diagram"><span class="octicon octicon-link"></span></a>Sequence diagram</h2>
-<div class="mermaid">sequenceDiagram
-    loop every day
-        Alice->>John: Hello John, how are you?
-        John-->>Alice: Great!
-    end</div><p><a href="http://knsv.github.io/mermaid/#sequence-diagrams">Sequence Diagram Syntax</a></p>
-<div class="warning">
-<p>Adding many sequence diagrams will slow down the editor.</p>
-</div>
-<h2 id="gantt-diagram"><a class="anchor" href="#gantt-diagram"><span class="octicon octicon-link"></span></a>Gantt diagram</h2>
-<div class="mermaid">gantt
-    dateFormat  YYYY-MM-DD
-    title Adding GANTT diagram functionality to mermaid
-
-    section A section
-    Completed task            :done,    des1, 2014-01-06,2014-01-08
-    Active task               :active,  des2, 2014-01-09, 3d
-    Future task               :         des3, after des2, 5d
-    Future task2               :         des4, after des3, 5d
-
-    section Critical tasks
-    Completed task in the critical line :crit, done, 2014-01-06,24h
-    Implement parser and jison          :crit, done, after des1, 2d
-    Create tests for parser             :crit, active, 3d
-    Future task in critical line        :crit, 5d
-    Create tests for renderer           :2d
-    Add to mermaid                      :1d
-
-    section Documentation
-    Describe gantt syntax               :active, a1, after des1, 3d
-    Add gantt diagram to demo page      :after a1  , 20h
-    Add another diagram to demo page    :doc1, after a1  , 48h
-
-    section Last section
-    Describe gantt syntax               :after doc1, 3d
-    Add gantt diagram to demo page      : 20h
-    Add another diagram to demo page    : 48h</div><p><a href="http://knsv.github.io/mermaid/#gant-diagrams">Gantt Diagram Syntax</a></p>
-<div class="warning">
-<p>Adding many gantt diagrams will slow down the editor.</p>
-</div>
-<h2 id="custom-container"><a class="anchor" href="#custom-container"><span class="octicon octicon-link"></span></a>Custom Container</h2>
-<p>Markup is similar to fenced code blocks. Valid container types are <code>success</code>, <code>info</code>, <code>warning</code> and <code>danger</code>.</p>
-<div class="info">
-<p>You have new mail.</p>
-</div>
-<div class="danger">
-<p>Staying up all night is bad for health.</p>
-</div>
-<h2 id="definition-list"><a class="anchor" href="#definition-list"><span class="octicon octicon-link"></span></a>Definition list</h2>
-<dl>
-<dt>Term 1</dt>
-<dd>Definition 1</dd>
-<dt>Term 2</dt>
-<dd>Definition 2a</dd>
-<dd>Definition 2b</dd>
-</dl>
-<p><a href="http://pandoc.org/README.html#definition-lists">Definition List Syntax</a></p>
-<h2 id="html"><a class="anchor" href="#html"><span class="octicon octicon-link"></span></a><abbr title="Hyper Text Markup Language">HTML</abbr></h2>
-<p>If you find the markdown syntax too limited, you can try some <span style="color: blue;"><abbr title="Hyper Text Markup Language">HTML</abbr><span>:</p>
-<p style="text-align:center;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png"/></p>
-<hr class="footnotes-sep" />
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1"  class="footnote-item"><p>Here is the footnote. <a href="#fnref1" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn2"  class="footnote-item"><p>Here's one with multiple blocks.</p>
-<p>Subsequent paragraphs are indented to show that they
-belong to the previous footnote. <a href="#fnref2" class="footnote-backref">↩</a></p>
-</li>
-<li id="fn3"  class="footnote-item"><p>Inlines notes are easier to write, since
-you don't have to pick an identifier and move down to type the
-note. <a href="#fnref3" class="footnote-backref">↩</a></p>
-</li>
-</ol>
-</section>
+<h2 id="websites-built-with-maml"><a class="anchor" href="#websites-built-with-maml"><span class="octicon octicon-link"></span></a>Websites built with maml</h2>
+<ul>
+<li><a href="http://mamljs.github.io/">maml's official website</a></li>
+</ul>
 
 </article>
 

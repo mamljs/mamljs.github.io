@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Documentation | maml static website generator</title>
+  <title>Fundamentals | maml static website generator</title>
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/flat-ui/2.2.2/css/flat-ui.min.css">
@@ -50,19 +50,23 @@
   <div class="row">
     <div class="col-xs-5 col-sm-4 col-md-3 sidebar">
       <ol start="0">
-<li><a href="/docs/">前言</a></li>
-<li>ECMAScript 6简介</li>
-<li><a href="/docs/let和const命令/">let和const命令</a></li>
-<li><a href="/docs/变量的解构赋值/">变量的解构赋值</a></li>
-<li><a href="/docs/字符串的扩展/">字符串的扩展</a></li>
-<li><a href="/docs/正则的扩展/">正则的扩展</a></li>
+<li><a href="/docs/">Preface</a></li>
+<li>Fundamentals</li>
+<li><a href="/docs/conventions/">Conventions</a></li>
+<li><a href="/docs/directories/">Directories</a></li>
+<li><a href="/docs/command-reference/">Command Reference</a></li>
 </ol>
 
     </div>
-    <div class="col-xs-7 col-sm-8 col-md-9">
+    <div class="col-xs-7 col-sm-8 col-md-9" style="border-left: 1px dashed gray;">
       <article class="markdown-body">
-        <h1>ECMAScript 6简介</h1>
-<p>ECMAScript 6（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</p>
+        <h1>Fundamentals</h1>
+<ol>
+<li>Every <code>index.md</code> file in input directory is a web page.</li>
+<li>Every <code>index.md</code> has an accompany <code>index.yml</code> as configuration file.</li>
+<li><code>index.yml</code> inheirts and overrides <code>index.yml</code> in ancestor directories.</li>
+<li>Views' template engine is <a href="https://github.com/mozilla/nunjucks">nunjucks</a>.</li>
+</ol>
 
       </article>
     </div>

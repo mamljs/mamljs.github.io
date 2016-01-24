@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Documentation | maml static website generator</title>
+  <title>Command Reference | maml static website generator</title>
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/flat-ui/2.2.2/css/flat-ui.min.css">
@@ -50,20 +50,47 @@
   <div class="row">
     <div class="col-xs-5 col-sm-4 col-md-3 sidebar">
       <ol start="0">
-<li><a href="/docs/">前言</a></li>
-<li><a href="/docs/ecmascript-6简介/">ECMAScript 6简介</a></li>
-<li><a href="/docs/let和const命令/">let和const命令</a></li>
-<li><a href="/docs/变量的解构赋值/">变量的解构赋值</a></li>
-<li>字符串的扩展</li>
-<li><a href="/docs/正则的扩展/">正则的扩展</a></li>
+<li><a href="/docs/">Preface</a></li>
+<li><a href="/docs/fundamentals/">Fundamentals</a></li>
+<li><a href="/docs/conventions/">Conventions</a></li>
+<li><a href="/docs/directories/">Directories</a></li>
+<li>Command Reference</li>
 </ol>
 
     </div>
-    <div class="col-xs-7 col-sm-8 col-md-9">
+    <div class="col-xs-7 col-sm-8 col-md-9" style="border-left: 1px dashed gray;">
       <article class="markdown-body">
-        <h1>字符串的扩展</h1>
-<p>JavaScript内部，字符以UTF-16的格式储存，每个字符固定为2个字节。对于那些需要4个字节储存的字符（Unicode码点大于0xFFFF的字符），JavaScript会认为它们是两个字符。</p>
+        <h1>Command Reference</h1>
+<h2 id="maml"><a class="anchor" href="#maml"><span class="octicon octicon-link"></span></a>maml</h2>
+<pre><code class="hljs">maml help
 
+  Usage: maml [options] [command]
+
+
+  Commands:
+
+    init        initialize a new website
+    build       build the website
+    help [cmd]  display help for [cmd]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number</code></pre><h2 id="maml-init"><a class="anchor" href="#maml-init"><span class="octicon octicon-link"></span></a>maml init</h2>
+<pre><code class="hljs">maml init
+
+Options:
+
+    -h, --help                 output usage information
+    -V, --version              output the version number
+    -t, --template &lt;template&gt;  specify website template</code></pre><h2 id="maml-build"><a class="anchor" href="#maml-build"><span class="octicon octicon-link"></span></a>maml build</h2>
+<pre><code class="hljs">maml build
+
+Options:
+
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -o, --output &lt;output&gt;  specify output directory</code></pre>
       </article>
     </div>
   </div>
